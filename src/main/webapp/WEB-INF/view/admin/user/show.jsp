@@ -28,14 +28,14 @@
                                     User Information
                                 </div>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">ID: </li>
-                                    <li class="list-group-item">Email: -</li>
-                                    <li class="list-group-item">Full name: -</li>
-                                    <li class="list-group-item">Address: -</li>
+                                    <li class="list-group-item">ID: ${user.id}</li>
+                                    <li class="list-group-item">Email: ${user.email}</li>
+                                    <li class="list-group-item">Full name: ${user.fullName}</li>
+                                    <li class="list-group-item">Address: ${user.address}</li>
 
                                 </ul>
                             </div>
-
+                            <a href="/admin/user" class="btn btn-success mt-3">Back</a>
                         </div>
 
                     </div>
