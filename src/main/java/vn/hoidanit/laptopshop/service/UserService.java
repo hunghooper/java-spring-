@@ -32,4 +32,8 @@ public class UserService {
     public User getUserById(long id) {
         return this.userRepository.findById(id);
     }
+
+    public User updateUserById(long id) {
+        return this.userRepository.removeById(id);
+    }
 }
