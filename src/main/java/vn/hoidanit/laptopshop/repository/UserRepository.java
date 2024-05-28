@@ -12,7 +12,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     void deleteById(long id);
 
-    List<User> findByEmail(String email);
+    List<User> findAllByEmail(String email);
 
     List<User> findAll();
 
@@ -21,4 +21,6 @@ public interface UserRepository extends JpaRepository<User, Long> {
     User removeById(long id);
 
     boolean existsByEmail(String email);
+
+    User findByEmail(String email);
 }
