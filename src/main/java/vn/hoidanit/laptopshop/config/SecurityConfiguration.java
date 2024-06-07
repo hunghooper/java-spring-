@@ -58,9 +58,7 @@ public class SecurityConfiguration {
                                 "/client/**", "/css/**", "/js/**", "/images/**")
                         .permitAll()
 
-                        .requestMatchers("/admin/**").hasRole("ADMIN")
-
-                        .anyRequest().authenticated())
+                        .requestMatchers("/admin/**").hasRole("ADMIN").anyRequest().authenticated())
 
                 .formLogin(formLogin -> formLogin
                         .loginPage("/login")

@@ -8,6 +8,7 @@ import vn.hoidanit.laptopshop.service.validator.RegisterChecked;
 public class RegisterDTO {
     @Size(min = 3, message = "First name must have at least 3 letters")
     private String firstName;
+    
     private String lastName;
 
     @Email(message = "Invalid email", regexp = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$")
