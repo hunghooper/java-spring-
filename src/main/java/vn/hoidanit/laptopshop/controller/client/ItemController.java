@@ -127,7 +127,6 @@ public class ItemController {
 
     @GetMapping("/thanks")
     public String getThankYouPage(Model model) {
-
         return "client/cart/thanks";
     }
 
