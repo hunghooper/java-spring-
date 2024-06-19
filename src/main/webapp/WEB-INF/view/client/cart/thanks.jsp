@@ -53,7 +53,11 @@
                                     Thank
                                     <c:out value="${sessionScope.fullName}" /> for choosing us!
                                 </div>
-                                <a href="/" class="btn btn-success">Home page</a>
+                                <div class="d-flex justify-content-between">
+                                    <a href="/order-history" class="btn btn-success">View your order</a>
+                                    <a href="/" class="btn btn-warning">Back to Homepage</a>
+
+                                </div>
                             </div>
 
                         </div>
